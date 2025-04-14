@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+/*Estilização header*/
+header{
+    background-color: #000021;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header #titleSite{
+    color:  white;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: bold;
+}
+header .headerItens{
+    display: flex;
+    color: white;
+    gap: 18px;
+    font-family: 'Poppins';
+}
+header a{
+    color: white;
+    text-decoration: none;
+   
+}
+.headerItens a:hover{
+    opacity: 50%;
+}
+header a:nth-child(3){
+    border-top: solid white 1px;
+}
+/* ------------------------- */
+/* Estilização formulario */
+main{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    width: 25%;
+    height: 100%;
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px 0px black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    min-height: 500px;
+    min-width: 320px;
+    max-height: 600px;
+}
+.formularioTitle{
+   
+}
+.formulario label{
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin-left: 40px;
+}
+.formulario input{
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    height: 8%;
+    border-radius: 5px;
+    border: solid #e2e2e2 1px;
+}
+#mensagem{
+    border-radius: 5px;
+    border: solid #e2e2e2 1px;
+    width: 80%;
+    max-height: 130px;
+    max-width: 350px;
+    resize: none;
+}
+.formButton{
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    align-self: flex-start;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.formButton:hover{
+    opacity: 50%;
+}
+/* ------------------------ */
+/* Estilização footer */
+footer{
+    background-color: #000021;
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.footerTitle{
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 85px;
+    width: fit-content;
+}
+footer .follow{
+    color: white;
+    border-left: solid white 1px;
+    margin-left: 85px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    row-gap: 10px;
+}
+.follow .redes{
+    width: fit-content;
+}
+.follow .redes:hover{
+    text-decoration: underline;
+}
+footer .follow img{
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+}
+footer .copyright{
+    color: white;
+    align-self: center;
+}
+/* resposinvidade */
+@media screen and (max-width: 830px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .headerItens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heroImg{
+        display: none;
+    }
+}
+/*  */
