@@ -4,30 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="contactStyle.css">
+    <link rel="stylesheet" href="administrador.css">
 </head>
 <body>
     <header>
         <a href="index.html" id="titleSite">Frada Contabilidade</a>
-        <div class="headerItens">
-                <a href="">Inicio</a>
-                <a href="about.html">Sobre-mim</a>
-                <a href="contact.html">Contate-me</a>
-                <a href="login.html" class="dif">Login</a>
-                <a href="cadastro.html" class="dif">Cadastro</a>
+        <div class="lineDiv" onclick="abrirAba()">
+            <p class="line"></p>
+            <p class="line"></p>
+            <p class="line"></p>
         </div>
     </header>
     <main>
-        <form action="" class="formulario">
-            <h1 class="formularioTitle">Entre em contato</h1>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name">
-            <label for="email">E-mail </label>
-            <input type="text" name="email" id="email">
-            <label for="mensagem">Mensagem </label>
-            <textarea name="mensagem" id="mensagem" cols="50" rows="5"></textarea>
-            <button class="formButton">Enviar</button>
-        </form>
+        <div class="headerItens">
+            <a href="administrador.html">Inicio</a>
+            <a href="inserirChamado.html" class="">Inserir Chamado</a>
+            <a href="adicionarServico.html" class="">Adicionar Serviço</a>
+            <a href="modificarSobreMim.html" class="">Modificar Sobre-Mim</a>
+    </div>
+        <div class="container">
+            <h1>Chamados</h1>
+
+        </div>
     </main>
     <footer>
         <h1 class="footerTitle">Siga-nos nas redes sociais</h1>
@@ -40,5 +38,6 @@
         </div>
         <p class="copyright">&#169; 2025 Frada Contabilidades</p>
     </footer>
+    <script src="admin.js"></script>
 </body>
 </html>

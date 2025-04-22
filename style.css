@@ -47,6 +47,10 @@ header a{
 header .headerItens a:nth-child(1){
     border-top: solid white 1px;
 }
+.dif{
+    font-size: 12px;
+    align-self: center;
+}
 /* ----------------------- */
 /* Hero area estilização */
 .heroArea{

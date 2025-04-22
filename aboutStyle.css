@@ -12,43 +12,46 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+main{
+    flex: 1;
+}
 
 /* ===== Header ===== */
-header {
+header{
+    background-color: #000021;
+    color: white;
+    padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000021;
-    padding: 10px 70px;
-    flex-wrap: wrap;
 }
-
-#titleSite {
-    color: white;
+header #titleSite{
+    color:  white;
+    font-family: 'Poppins';
     font-size: 32px;
     font-weight: bold;
-    text-decoration: none;
 }
-
-.headerItens {
+header .headerItens{
     display: flex;
+    color: white;
     gap: 18px;
+    font-family: 'Poppins';
 }
-
-.headerItens a {
+header a{
     color: white;
     text-decoration: none;
-    font-size: 16px;
+   
 }
-
-.headerItens a:hover {
-    opacity: 0.6;
+.headerItens a:hover{
+    opacity: 50%;
 }
-
-.headerItens a:nth-child(2) {
-    border-top: 1px solid white;
+header .headerItens a:nth-child(2){
+    border-top: solid white 1px;
 }
-
+.dif{
+    font-size: 12px;
+    align-self: center;
+}
 /* ===== Sections ===== */
 article.sectionBoxes {
     display: flex;
@@ -56,6 +59,7 @@ article.sectionBoxes {
     gap: 30px;
     padding: 30px;
 }
+
 
 /* Box base */
 .box {
